@@ -4,7 +4,7 @@ from openprocurement.api.interfaces import IProjectConfigurator
 from openprocurement.api.configurator import Configurator
 
 config = {
-    'AUCTION_PREFIX': 'AU-PS'
+    'AUCTION_PREFIX': 'UA-PS'
 }
 
 def includeme(*args, **kwargs):
