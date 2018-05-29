@@ -13,8 +13,8 @@ class TestConfiguratorCreation(unittest.TestCase):
         gsm = getGlobalSiteManager()
         configurator = gsm.queryUtility(IProjectConfigurator)
 
-        assert configurator is not None
-        assert isinstance(configurator, Configurator) is True
+        self.assertIsNotNone(configurator)
+        self.assertTrue(isinstance(configurator, Configurator))
 
 
 def suite():
