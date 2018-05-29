@@ -1,0 +1,11 @@
+language: python
+sudo: required
+group: deprecated-2017Q4
+before_script:
+  - sudo add-apt-repository ppa:chris-lea/libsodium -y
+  - sudo apt-get -qq update
+  - sudo apt-get install libsodium13 -y
+python:
+  - "2.7"
+install: pip install tox-travis
+script: tox
