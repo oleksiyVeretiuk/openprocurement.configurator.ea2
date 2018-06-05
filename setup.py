@@ -1,8 +1,11 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 entry_points = {
     'openprocurement.api.configurator': [
-        'configurator = includeme:includeme'
+        'configurator = openprocurement.configurator.ea2.includeme:includeme'
+    ],
+    'openprocurement.tests': [
+        'configurator = openprocurement.configurator.ea2.tests:suite'
     ]
 }
 requires = [
@@ -26,7 +29,9 @@ setup(name='openprocurement.configurator.ea2',
       author_email='info@quintagroup.com',
       license='Apache License 2.0',
       requires=requires,
+      namespace_packages=['openprocurement', 'openprocurement.configurator'],
       extras_require={'test': test_requires},
+      packages=find_packages(exclude=['ez_setup']),
       include_package_data=True,
       zip_safe=False,
       entry_points=entry_points)
