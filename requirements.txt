@@ -2,4 +2,3 @@ git+https://github.com/openprocurement/barbecue.git
 git+https://github.com/openprocurement/python-json-patch.git
 git+https://github.com/openprocurement/rfc6266.git
 git+https://github.com/openprocurement/openprocurement.api@ea_core_master#egg=openprocurement.api
-#http://op:x9W3jZ@dist.quintagroup.com/op/openprocurement.api-2.4.19+eacore.zip
