@@ -3,7 +3,7 @@ from zope.component import getGlobalSiteManager
 from openprocurement.api.interfaces import IProjectConfigurator
 from openprocurement.api.configurator import Configurator
 
-from includeme import includeme
+from openprocurement.configurator.ea2.includeme import includeme
 
 
 class TestConfiguratorCreation(unittest.TestCase):
